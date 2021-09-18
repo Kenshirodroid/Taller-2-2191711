@@ -1,8 +1,49 @@
+body{
+  background-color: bisque;
+}
+
+/* Menu Inicial */
+.principal-nav{
+  border:solid 5px;
+  width: 800px;
+  margin: 10px;
+  border-color:black;
+  text-align: center;
+  background-color:white;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  left: 20%;
+}
+   
+ul{
+    list-style-type: none;
+    position: relative;
+    left: 250px;
+}
+li{
+  float: left;
+  margin-left: 20px;
+}
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 3px 3px;
+} 
+li a:visited{
+  color: rgb(203, 206, 9);
+}
+li a:hover{
+  background-color:darksalmon;
+  color: blanchedalmond;
+}
 a{
     text-decoration: none;
     color:black;
     border:solid 1px;
-    padding:5px;
-    background-color: rgb(20, 107, 35);
-    border-radius: 10px;    
+    padding:3px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
   }
