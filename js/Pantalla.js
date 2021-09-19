@@ -5,6 +5,12 @@ class Pantalla {
         this.calculador = new Calculadora();
         this.valorPresente = '';
         this.valorPasado = '';
+        this.signos ={
+            suma: '+',
+            resta: '-',
+            multiplicacion: 'x',
+            division: '/'
+        }
         this.tipoOperacion = undefined;
     }
 
@@ -15,7 +21,7 @@ class Pantalla {
 
     imprimirValores(){
         this.pantallaValorPresente.textContent = this.valorPresente;
-        this.pantallaValorPasado.textContent = this.valorPasado;
+        this.pantallaValorPasado.textContent = `${this.valorPasado} ${this.signos[this.tipoOperacion] || ''} `;
     }
 
     borrar(){
