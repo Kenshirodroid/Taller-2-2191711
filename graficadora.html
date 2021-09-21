@@ -5,12 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> GRAFICADORA </title>
-    <link rel="stylesheet" type="text/CSS" href="CSS/graficadora.css" media="screen"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/CSS" href="css/graficadora.css" media="screen"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
+
     
+</head>
+<body > 
+    <div class="principal-nav">
+        <nav>
+        <ul>
+        
+        <li><a href="index.html"> Inicio </a></li> 
+        <li><a href="calculadora.html"> Calculadora </a></li>
+        
+        </ul>
     </div>
+  <div class="base">
+    <div class="center">
+      <div id="detallesgrafica">
+    <div>
+      <label class="y" for="y1"><b>Nombre Etiquetas</b></label>
+      <input class="guardar" name="nombre" id="label" placeholder="Coloque los datos" type="text"><br><br>
+    </div>
+    <div>
+      <label class="x" for="x1"><b>Datos</b></label>
+      <input class="guardar" name="nombre" id="data" placeholder="Coloque los datos" type="text"><br><br>
+    </div>
+    <div id="options">
+      <button class="boton1" id="circular"><b>Circular</b></button>
+      <button class="boton1" id="lineal"><b>Lineal</b></button>
+      <button class="boton1" id="barras"><b>Barras</b></button> <br> <br>
+    </div>
+ <div>
+   <button class="boton1" id="grafico"><b>Empezar a Graficar</b></button>
+   <a class="boton1" href="graficadora.html"><b>Borrar</b></a>
+ </div>
+</div>
+</div>
+
+<div id="alineargrafico">
+ <section class="chart" id="desarrollografica">
+<div>
+<canvas id="myChart" ></canvas>
+</div>
+ </section>
+ <script src="js/Graficadora.js"></script>
+</div>
+</div>
 </body>
 </html>
